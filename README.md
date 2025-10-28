@@ -1,5 +1,5 @@
 # Simple Calculator App
-Simple Calculator App written purely in python without using the eval() function, using tkinter for the UI.
+Simple Calculator App written purely in python without using the eval() function, using tkinter for the GUI.
 
 ## Features
 * addition
