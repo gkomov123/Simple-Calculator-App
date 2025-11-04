@@ -13,6 +13,4 @@ The app can do simple calculations, the % percent operator gives you the decimal
 
 ## TODO features
 
-I plan to add square root ("√") operation in the future for now i have implemented the button.
-
-I also plan to add more scientific operation like sin, cos, tg, log and whatever i think of.
+I plan to add more scientific operation like sin, cos, tg, log and whatever i think of.
