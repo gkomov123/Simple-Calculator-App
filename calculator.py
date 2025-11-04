@@ -107,13 +107,13 @@ def button_clicked(some_value):
         elif some_value == "%":
             result = float(label["text"]) / 100
             label["text"] = remove_zero_decimal(result)
-    else:#digits or .
-
-        # TODO square root button
-
+    else:#digits, "." or "√"
         if some_value == ".":
             if some_value not in label["text"]:
                 label["text"] += some_value
+        elif some_value == "√":
+            result = pow(float(label["text"]), 0.5)
+            label["text"] = remove_zero_decimal(result)
         elif some_value in "0123456789":
             if label["text"] == "0": # replace 0 with number instead of getting 05 when typing
                 label["text"] = some_value
