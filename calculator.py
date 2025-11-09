@@ -1,6 +1,5 @@
 import tkinter
 
-
 button_values = [
     ["AC", "+/-", "%", "÷"],
     ["7", "8", "9", "×"],
@@ -75,17 +74,17 @@ def button_clicked(some_value):
         if some_value == "=":
             if A is not None and operator is not None:
                 B = label["text"]
-                numA = float(A)
-                numB = float(B)
+                num_a = float(A)
+                num_b = float(B)
 
                 if operator == "+":
-                    label["text"] = remove_zero_decimal(numA + numB)
+                    label["text"] = remove_zero_decimal(num_a + num_b)
                 elif operator == "-":
-                    label["text"] = remove_zero_decimal(numA - numB)
+                    label["text"] = remove_zero_decimal(num_a - num_b)
                 elif operator == "×":
-                    label["text"] = remove_zero_decimal(numA * numB)
+                    label["text"] = remove_zero_decimal(num_a * num_b)
                 elif operator == "÷":
-                    label["text"] = remove_zero_decimal(numA / numB)
+                    label["text"] = remove_zero_decimal(num_a / num_b)
 
                 clear_all()
 
